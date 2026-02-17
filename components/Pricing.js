@@ -174,21 +174,7 @@ export default function Pricing() {
           ))}
         </div>
 
-        {/* FAQ or Additional Info */}
-        <div className="mt-16 bg-white rounded-xl p-8 text-center">
-          <h3 className="text-2xl font-bold text-primary mb-4">Tüm paketler ücretsiz deneme ile gelir</h3>
-          <p className="text-gray-600 mb-6">
-            30 gün boyunca tüm özellikleri test edin. Hiçbir kredi kartı gerekli değildir.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary shadow-lg transition">
-              Ücretsiz Deneme Başlat
-            </button>
-            <button className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition">
-              Hızlı Demo Al
-            </button>
-          </div>
-        </div>
+       
       </div>
     </section>
   )

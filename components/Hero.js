@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link'
 
 export default function Hero() {
   return (
@@ -21,9 +22,9 @@ export default function Hero() {
               <button className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
                 Demo İste
               </button>
-              <button className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition">
+              <Link href="#companies" className="px-8 py-3 border-2 border-primary text-primary rounded-lg font-semibold hover:bg-primary hover:text-white transition flex items-center justify-center">
                 Daha Fazla Bilgi
-              </button>
+              </Link>
             </div>
           </div>
 
