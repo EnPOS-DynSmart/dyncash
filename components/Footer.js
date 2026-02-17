@@ -120,8 +120,8 @@ export default function Footer() {
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <h4 className="font-semibold mb-2">📞 Telefon</h4>
-              <a href="tel:+905551234567" className="text-gray-300 hover:text-white transition text-sm">
-                +90 555 123 45 67
+              <a href="tel:+902163482710" className="text-gray-300 hover:text-white transition text-sm">
+                +90 216 348 27 10
               </a>
             </div>
             <div>
@@ -133,7 +133,7 @@ export default function Footer() {
             <div>
               <h4 className="font-semibold mb-2">📍 Adres</h4>
               <p className="text-gray-300 text-sm">
-                İstanbul, Türkiye
+                Yamanevler Mahallesi, Ömer Faik Atakan Caddesi, No: 3 Yılmaz Plaza, 34768, İstanbul, Türkiye
               </p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="border-t border-white border-opacity-20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-300">
           <p>&copy; {currentYear} DynCash. Tüm hakları saklıdır.</p>
-          <p>Made with ❤️ for businesses</p>
+          <p>Made with ❤️ for EnPOS</p>
         </div>
       </div>
     </footer>
