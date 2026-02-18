@@ -54,7 +54,7 @@ export default function DynSmartIntegration() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-secondary rounded-lg p-8 hover:shadow-lg transition transform hover:scale-105 hover:bg-white"
+              className="bg-secondary rounded-lg p-8 hover:shadow-lg transition transform hover:scale-105 hover:bg-white text-center"
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
               <h3 className="text-xl font-bold text-primary mb-2">
