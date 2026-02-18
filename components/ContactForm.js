@@ -53,21 +53,26 @@ export default function ContactForm() {
     setLoading(true)
 
     try {
-      // Simulate form submission (replace with actual API call)
-      await new Promise(resolve => setTimeout(resolve, 1000))
-      
-      const emailBody = `
-Yeni İletişim Formu Başvurusu:
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
 
-Firma İsmi: ${formData.companyName}
-Yetkili İsmi: ${formData.authorizedPersonName}
-Yetkili Telefon Numarası: ${formData.authorizedPersonPhone}
-Günlük Fiş Sayısı: ${formData.dailyReceipts}
-Şube Sayısı: ${formData.branches}
-Muhasebe Yazılımı: ${formData.accountingSoftware}
-      `
+      if (!response.ok) {
+        const errorData = await response.json();
+        const specificError = errorData.error || 'No specific error details.';
+        throw new Error(`${errorData.message} Details: ${specificError}`);
+      }
 
-      console.log('Form submitted:', formData)
+      // İsteğe bağlı: API'den gelen başarı mesajını loglayabilirsiniz
+      const successData = await response.json();
+      console.log(successData.message);
+
+      // E-posta içeriğini konsola yazdırmaya gerek yok, arka uç hallediyor
+      // console.log('Form submitted:', formData)
       setSubmitted(true)
       
       // Reset form after 3 seconds
@@ -77,14 +82,14 @@ Muhasebe Yazılımı: ${formData.accountingSoftware}
           companyName: '',
           authorizedPersonName: '',
           authorizedPersonPhone: '',
-          dailyReceipts: 300,
+          dailyReceipts: 500, // Başlangıç değerine sıfırlayın
           branches: '1',
           accountingSoftware: '',
         })
       }, 3000)
     } catch (err) {
-      setError('Form gönderilirken hata oluştu. Lütfen tekrar deneyin.')
-      console.error('Form submission error:', err)
+      setError(err.message);
+      console.error('Form submission error:', err);
     } finally {
       setLoading(false)
     }
