@@ -95,7 +95,7 @@ export default function DynSmartIntegration() {
 
         {/* Benefits */}
         <div className="grid md:grid-cols-2 gap-8 mt-16">
-          <div className="space-y-6 animate-fade-in-up">
+          <div className="space-y-6 animate-fade-in-up flex flex-col items-center">
             <h3 className="text-2xl font-bold text-primary">Neden DynSmart?</h3>
             <ul className="space-y-3">
               {[

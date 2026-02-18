@@ -15,8 +15,8 @@ export default function Hero() {
               </span>
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed">
-              DynCash ile işletmenizin kasa yönetimini modernize edin. 30 yıllık deneyim, 10.000+ aktif kasa, 
-              her gün 2 milyondan fazla fiş işlemi. Donanımdan bağımsız, bulut tabanlı çözüm.
+              DynCash ile işletmenizin kasa yönetimini modernize edin. 30 yıllık deneyim, 15.000+ aktif kasa, 
+              her gün 4.5 milyondan fazla fiş işlemi. Donanımdan bağımsız, bulut tabanlı çözüm.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="#contact" className="px-8 py-3 bg-primary text-white rounded-lg font-semibold hover:bg-primary shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
@@ -30,18 +30,15 @@ export default function Hero() {
 
           {/* Right Content - Video/GIF Placeholder */}
           <div className="animate-slide-in-right">
-            <div className="bg-gradient-to-br from-primary to-blue-600 rounded-2xl overflow-hidden shadow-2xl aspect-video flex items-center justify-center">
-              <div className="text-center text-white">
-                <svg
-                  className="w-20 h-20 mx-auto mb-4 opacity-80"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M2 6a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z" />
-                </svg>
-                <p className="text-xl font-semibold">DynCash Demo</p>
-                <p className="text-sm mt-2 opacity-80">Video veya GIF buraya gelecek</p>
-              </div>
+            <div className="bg-gradient-to-br from-primary to-blue-600 rounded-2xl overflow-hidden shadow-2xl aspect-video relative">
+              <iframe
+                className="absolute top-1/2 left-1/2 w-[103.5%] h-[103%] -translate-x-1/2 -translate-y-1/2 pointer-events-none"
+                src="https://www.youtube.com/embed/_UbIEStIgqU?autoplay=1&mute=1&loop=1&playlist=_UbIEStIgqU&controls=0&showinfo=0&modestbranding=1&playsinline=1"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </div>
@@ -53,11 +50,11 @@ export default function Hero() {
             <p className="text-gray-600">Yıl Deneyim</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">10.000+</div>
+            <div className="text-4xl font-bold text-primary mb-2">15.000+</div>
             <p className="text-gray-600">Aktif Kasa</p>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-primary mb-2">2M+</div>
+            <div className="text-4xl font-bold text-primary mb-2">4.5M+</div>
             <p className="text-gray-600">Günlük Fiş</p>
           </div>
         </div>

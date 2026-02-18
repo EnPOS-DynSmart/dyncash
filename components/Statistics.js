@@ -26,7 +26,7 @@ export default function Statistics() {
   useEffect(() => {
     if (!isVisible) return
 
-    const targets = { years: 30, stores: 10000, receipts: 2000000 }
+    const targets = { years: 30, stores: 15000, receipts: 4500000 }
     const duration = 2000
     const startTime = Date.now()
 
@@ -36,8 +36,8 @@ export default function Statistics() {
 
       setCounts({
         years: Math.floor(30 * progress),
-        stores: Math.floor(10000 * progress),
-        receipts: Math.floor(2000000 * progress),
+        stores: Math.floor(15000 * progress),
+        receipts: Math.floor(4500000 * progress),
       })
 
       if (progress < 1) {
@@ -68,7 +68,7 @@ export default function Statistics() {
             DynCash'in Gücü
           </h2>
           <p className="text-xl text-gray-100 max-w-2xl mx-auto">
-            30 yıllık deneyim ile binlerce işletmenin güvenini kazandık. Günde 2 milyondan fazla fiş işlemi 
+            30 yıllık deneyim ile binlerce işletmenin güvenini kazandık. Günde 4.5 milyondan fazla fiş işlemi 
             ile ülkenin bir numaralı satış yazılımı tercihi.
           </p>
         </div>
